@@ -14,10 +14,11 @@ def main():
     out = ROOT / "build/tests"
     out.mkdir(parents=True, exist_ok=True)
     clang = subprocess.check_output(["/usr/bin/xcrun", "--find", "clang++"], text=True).strip()
+    host_sdk = subprocess.check_output(["/usr/bin/xcrun", "--sdk", "macosx", "--show-sdk-path"], text=True).strip()
     results = []
     for name in ("ProtocolTests", "AudioPCMTests"):
         executable = out / name
-        subprocess.run([clang, "-std=c++14", "-O1", "-g", "-Wall", "-Wextra", "-fsanitize=address,undefined", "-fno-omit-frame-pointer", "-I", str(ROOT / "src"), str(ROOT / ("tests/" + name + ".cpp")), "-o", str(executable)], check=True)
+        subprocess.run([clang, "-isysroot", host_sdk, "-std=c++14", "-O1", "-g", "-Wall", "-Wextra", "-fsanitize=address,undefined", "-fno-omit-frame-pointer", "-I", str(ROOT / "src"), str(ROOT / ("tests/" + name + ".cpp")), "-o", str(executable)], check=True)
         completed = subprocess.run([str(executable), *([str(firmware)] if name == "ProtocolTests" else [])], check=True, capture_output=True, text=True)
         print(completed.stdout, end="")
         results.append(completed.stdout)

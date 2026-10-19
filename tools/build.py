@@ -46,9 +46,10 @@ def main():
     run(["/usr/bin/codesign", "--force", "--sign", "-", "--timestamp=none", bundle])
     run(["/usr/bin/codesign", "--verify", "--strict", "--verbose=2", bundle])
     cc = subprocess.check_output(["/usr/bin/xcrun", "--find", "clang"], text=True).strip()
+    host_sdk = subprocess.check_output(["/usr/bin/xcrun", "--sdk", "macosx", "--show-sdk-path"], text=True).strip()
     for name, frameworks in [("publish", ["IOKit", "CoreFoundation"]), ("mic-input-check", ["CoreAudio", "CoreFoundation"])]:
         flags = [flag for framework in frameworks for flag in ("-framework", framework)]
-        run([cc, "-arch", "x86_64", "-O2", "-Wall", "-Wextra", ROOT / ("tools/" + name + ".c"), *flags, "-o", out / name])
+        run([cc, "-isysroot", host_sdk, "-arch", "x86_64", "-O2", "-Wall", "-Wextra", ROOT / ("tools/" + name + ".c"), *flags, "-o", out / name])
     manifest = {"driver_version": "0.3.2", "architecture": "x86_64", "tested_os_only": "26.7.1 (25G241)", "compiler": subprocess.check_output([clang, "--version"], text=True), "dependencies": LOCK, "files": {p.relative_to(out).as_posix(): digest(p) for p in bundle.rglob("*") if p.is_file()}, "installed_or_loaded": False}
     (out / "build-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print("Built and verified build/RazerSSTMicrophone.kext; no system changes. Read docs/INSTALL.md before any integration.")

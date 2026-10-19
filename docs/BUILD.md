@@ -2,6 +2,8 @@
 
 Use an unprivileged account on macOS with Xcode Command Line Tools and Python 3. I verified the build with Apple clang 21 from CLT 26.6. I have not hardware-tested builds from other toolchains. The `macos10.9` compiler target preserves the flags from my working build; I am not claiming macOS 10.9 support.
 
+The host tests and user-space helpers explicitly select the macOS SDK reported by `xcrun`. This also supports full Xcode installations where calling the compiler directly does not supply the SDK's standard C++ and framework headers. The kernel build continues to use the pinned MacKernelSDK.
+
 ```sh
 python3 tools/fetch-dependencies.py
 ./Test.command
