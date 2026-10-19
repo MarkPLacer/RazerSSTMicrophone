@@ -1,0 +1,10 @@
+{
+  "method": "Removed signatures from temporary copies only; original files untouched",
+  "unsigned_executable_bytes_identical": true,
+  "original_unsigned_sha256": "817c396485f8580b728d49b8181c90e7255797d09802149153c6564e1181d57c",
+  "public_rebuild_unsigned_sha256": "817c396485f8580b728d49b8181c90e7255797d09802149153c6564e1181d57c",
+  "original_signed_sha256": "e012eb76c5650daa371d139855a38e4083ce49351f6c9923c81990e04d920a93",
+  "public_rebuild_signed_sha256": "ebfbf39294ddcb530f25b15583d8b22553e6310d737ba0e2f4733bf87cb7a01c",
+  "loaded_public_rebuild": false,
+  "clean_source_export_verified": true
+}

@@ -1,0 +1,19 @@
+{
+  "firmware": {
+    "repository": "thesofproject/sof-bin",
+    "commit": "fcd5ae85ead7ecd67ff199335b61fac825843ca0",
+    "path": "v2.2.x/sof-v2.2/intel-signed/sof-adl.ri",
+    "url": "https://raw.githubusercontent.com/thesofproject/sof-bin/fcd5ae85ead7ecd67ff199335b61fac825843ca0/v2.2.x/sof-v2.2/intel-signed/sof-adl.ri",
+    "bytes": 525056,
+    "sha256": "294e5a51b1d3fc4ceda57780927c2a2ec95bb5d23477f879a9fb648c6c01cb30",
+    "license_sha256": "80169325f69cf8288ff225b590ca4bf2e8e2a15759076616fae0bfe2610427c9"
+  },
+  "sdk": {
+    "repository": "acidanthera/MacKernelSDK",
+    "commit": "3f750085caa17ec3a7880f11c11bf4f48cd6a164",
+    "url": "https://codeload.github.com/acidanthera/MacKernelSDK/tar.gz/3f750085caa17ec3a7880f11c11bf4f48cd6a164",
+    "bytes": 2679518,
+    "sha256": "8931e622b6d16a7052cb2c2dabe16be06963a34b747f19e6cda2bbe8bc7e2557"
+  },
+  "dai_config_sha256": "f0d487e93ab56e79ee52f89b353330b8978e633ef143f3a1c3640d643bc9593f"
+}

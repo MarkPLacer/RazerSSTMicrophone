@@ -1,0 +1,26 @@
+RazerSSTMicrophone 0.3.2 — experimental, exact-target internal DMIC driver.
+
+Copyright (c) 2026 MarkPLacer, project modifications and packaging.
+This driver was largely written with the help of AI (GPT-6.1 Sol).
+Adapted code retains Copyright (c) 2026 DexterSLamb and Shubham Banekar.
+Intel SOF register/protocol work retains Intel Corporation copyright,
+including 2017–2021 for the referenced Linux SOF files.
+
+Project source: BSD-3-Clause. Full donor and Intel terms are in licenses/.
+The complete SOF firmware release license is licenses/SOF-LICENCE.Intel.
+The fetched MacKernelSDK and linked runtime have their own terms, including
+the preserved licenses/MacKernelSDK-APSL-2.0.txt and source-file notices.
+
+SOF ADL firmware is not committed in this source preview. The local build
+fetches the pinned original Intel-signed file and embeds it without changes.
+It is downloaded to volatile DSP memory at runtime; no firmware is flashed.
+
+LatSOFAudio source pin: 41fda77bd5321464fef5ba71a44437f993215d55
+Linux source pin: 58161ead29e50d70a317ea26b472e0c7508e69da
+SOF source pin: 57864296b07c5ffd673214dd5b1e3d07ee274a22
+SOF binary pin: fcd5ae85ead7ecd67ff199335b61fac825843ca0
+MacKernelSDK pin: 3f750085caa17ec3a7880f11c11bf4f48cd6a164
+
+No donor HAL plugin, Windows driver, OEM BIOS image or Apple system kext
+is distributed. This project is not endorsed by Apple, Intel, Razer,
+the SOF project or the donor authors. See docs/PROVENANCE.md for details.

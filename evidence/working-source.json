@@ -1,0 +1,42 @@
+{
+  "driver_version": "0.3.2",
+  "snapshot_date": "2026-10-19",
+  "kernel_source_unmodified": true,
+  "files": [
+    {
+      "file": "src/RazerSSTMicrophone.cpp",
+      "sha256": "c5ae81a85da780444691b67296c5ddd5513cded5e46f6211f1395df5e9500738",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/RazerMicAudio.hpp",
+      "sha256": "5f35496e7d29fadc5bb684218cc4ada2637239d06800d25c3e67bafbc63b5b6c",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/RazerMicAudio.inc",
+      "sha256": "97c4b43f27f47f4f0821fd90171280939cd11fe010db313e0e6cb15d73193193",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/AudioPCM.hpp",
+      "sha256": "f606fd53a5c7d7275877851fa1aa19aea32f2bb216ba634c2469fa506ee21cd3",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/SSTProtocol.hpp",
+      "sha256": "5959c89f3a6d616d8ab6838f0eb7e16d94f8e9fbd4d7767d1b8886a217eccda2",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/Info.plist",
+      "sha256": "882b4a1dc555bbed236412cdc4c5a14d52d70532d104b4f4c4ac52ac69171ca3",
+      "same_as_working_source": true
+    },
+    {
+      "file": "src/ModuleInfo.cpp",
+      "sha256": "f6a2a10b007c621243cc702cd16f0f3a135060753c33b8b242dc2b8105887fb0",
+      "same_as_working_source": true
+    }
+  ]
+}

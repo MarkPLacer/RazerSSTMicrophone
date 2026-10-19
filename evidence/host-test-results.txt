@@ -1,0 +1,3 @@
+PASS: actual signed ADL FW_READY/XMan windows; all truncated lengths; ABI/source/hash/overlap rejection; SD0/SD7 ownership exclusion; mapped BDL complete coverage/no truncation
+PASS: stereo/DC/gain/mute/clipping/ring bounds/duplicate clients/clock wraps (ASan+UBSan)
+PASS: IPC3 DAI ABI; logical FIFO0 / physical PDM1 A+B; 48kHz stereo; exact 2.4MHz; reserved fields clear; no extra PDM controllers

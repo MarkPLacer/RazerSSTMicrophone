@@ -1,0 +1,3 @@
+# Preserve checksum-pinned upstream license bytes, including their whitespace.
+LICENSE.sof -text -whitespace
+licenses/SOF-LICENCE.Intel -text -whitespace

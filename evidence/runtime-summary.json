@@ -1,0 +1,80 @@
+{
+  "driver_version": "0.3.2",
+  "reference_model": "Razer Blade 17 (2022), RZ09-0423, DI780 rev 4, BIOS 2.01",
+  "reference_os": "macOS 26.7.1 (25G241), x86_64",
+  "original_installed_binary_sha256": "e012eb76c5650daa371d139855a38e4083ce49351f6c9923c81990e04d920a93",
+  "latest_three_cycle_result": {
+    "device_found": true,
+    "audio_saved": false,
+    "cycles": [
+      {
+        "number": 1,
+        "status": 0,
+        "callbacks": 394,
+        "frames": 201728,
+        "invalid": 0,
+        "changing_stereo_input": true,
+        "channel0_changes": 201728,
+        "channel1_changes": 201728,
+        "channel0_peak": 0.03801972,
+        "channel1_peak": 0.03915286,
+        "channel0_rms": 0.00875931,
+        "channel1_rms": 0.00859593,
+        "channel0_clipped": 0,
+        "channel1_clipped": 0,
+        "channel0_1200hz_rms": 0.00118139,
+        "channel1_1200hz_rms": 0.00109232
+      },
+      {
+        "number": 2,
+        "status": 0,
+        "callbacks": 376,
+        "frames": 192512,
+        "invalid": 0,
+        "changing_stereo_input": true,
+        "channel0_changes": 192512,
+        "channel1_changes": 192512,
+        "channel0_peak": 0.04833731,
+        "channel1_peak": 0.05007862,
+        "channel0_rms": 0.00864625,
+        "channel1_rms": 0.00854177,
+        "channel0_clipped": 0,
+        "channel1_clipped": 0,
+        "channel0_1200hz_rms": 0.00113379,
+        "channel1_1200hz_rms": 0.00107029
+      },
+      {
+        "number": 3,
+        "status": 0,
+        "callbacks": 381,
+        "frames": 195072,
+        "invalid": 0,
+        "changing_stereo_input": true,
+        "channel0_changes": 195072,
+        "channel1_changes": 195072,
+        "channel0_peak": 0.04284964,
+        "channel1_peak": 0.04352013,
+        "channel0_rms": 0.00889469,
+        "channel1_rms": 0.00881466,
+        "channel0_clipped": 0,
+        "channel1_clipped": 0,
+        "channel0_1200hz_rms": 0.00114643,
+        "channel1_1200hz_rms": 0.00108126
+      }
+    ],
+    "all_three_cycles_passed": true
+  },
+  "acoustic_1200hz_response_ratio": [
+    4.263,
+    3.269
+  ],
+  "persistent_startup_verified": true,
+  "idle_pm_state_verified": 0,
+  "dma_stop_and_stream_restore_verified": true,
+  "sleep_wake_verified": false,
+  "sleep_observation": "My display froze after a wake attempt, and I manually restarted my laptop. I have not established whether the microphone driver caused it.",
+  "raw_audio_included": false,
+  "raw_system_logs_included": false,
+  "public_package_build_installed": false,
+  "voice_memos_speech_confirmed": true
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-19",
+  "scope": "Pre-publication validation from a clean source export; no kernel installation",
+  "host_tests": {
+    "ProtocolTests": "PASS, ASan+UBSan",
+    "AudioPCMTests": "PASS, ASan+UBSan",
+    "DAI_wire_ABI": "PASS"
+  },
+  "build": {
+    "architecture": "x86_64",
+    "compiler": "Apple clang 21.0.0 (clang-2100.1.1.101)",
+    "plist_lint": "PASS",
+    "ad_hoc_signature_strict_verification": "PASS",
+    "helpers_x86_64": "PASS",
+    "python_syntax": "PASS",
+    "workflow_yaml_parse": "PASS",
+    "remote_ci_executed": false
+  },
+  "kernel_source_files_match_reference": 7,
+  "unsigned_executable_matches_installed_reference": true,
+  "firmware_license_matches_pinned_upstream": true,
+  "source_privacy_pattern_audit": "PASS; supplemented by manual file inventory review",
+  "limitations": [
+    "Sleep/wake unresolved",
+    "One validated hardware target",
+    "No independent security audit",
+    "Public integration/installer not hardware-tested"
+  ],
+  "public_rebuild_installed": false,
+  "documentation_revision": {
+    "date": "2026-10-19",
+    "voice": "First person, as MarkPLacer",
+    "ai_disclosure": "This driver was largely written with the help of AI, specifically GPT-6.1 Sol.",
+    "kernel_source_changed": false
+  },
+  "clean_export_validation": {
+    "source_commit": "b460a968c80775f19fe914b95f08cb6220efa358",
+    "source_audit": "PASS",
+    "pinned_dependencies": "PASS",
+    "protocol_pcm_sanitizer_tests": "PASS",
+    "dai_abi_test": "PASS",
+    "build_and_signature": "PASS",
+    "unsigned_executable_matches_installed_reference": true
+  },
+  "privacy_review": {
+    "reachable_git_history_reviewed": true,
+    "private_credentials_paths_serials_network_identifiers_recordings_found": false,
+    "commit_identity": "Public GitHub handle and GitHub noreply email only",
+    "retained_identifiers": "Hardware constants, software build UUID and public upstream license credits"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "tested_model": "Razer Blade 17 (2022), RZ09-0423, DI780 rev 4",
+  "tested_bios": "2.01",
+  "pci_vendor": "8086",
+  "pci_device": "51c8",
+  "pci_subsystem_vendor": "1a58",
+  "pci_subsystem_device": "3005",
+  "pci_address": "00:1f.3",
+  "dsp": "Alder Lake / cAVS 2.5, host-managed core mask 1",
+  "capture": {
+    "physical_pdm_controller": 1,
+    "microphones": ["A", "B"],
+    "io_clock_hz": 38400000,
+    "clock_divisor": 16,
+    "pdm_clock_hz": 2400000,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "container_bits": 32,
+    "nhlt_valid_bits": 24,
+    "clock_edge": 0,
+    "clock_skew": 0,
+    "duty_min_percent": 48,
+    "duty_max_percent": 52
+  },
+  "provenance": "Decoded hardware parameters from this model's BIOS 2.01 NHLT; no BIOS image, raw table, coefficients or Windows driver is distributed. The 216-byte computed IPC3 message is generated from these scalar parameters. Microphone capsule manufacturer and part number are not established."
+}
